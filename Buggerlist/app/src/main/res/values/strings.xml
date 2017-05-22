@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Buggerlist</string>
+    <string name="hello_world">Hello World</string>
+    <string name="tab_organize">Organize</string>
+    <string name="tab_task">Add Task</string>
+    <string name="tab_buggerList">BuggerList</string>
+    <string name="Projects">Projects</string>
+    <string name="Project">Project</string>
+    <string name="Date">Date</string>
+    <string name="Priority">Priority</string>
+    <string name="newProject">New Project</string>
+    <string name="newTask">New Task</string>
+    <string name="Start">Start Time</string>
+    <string name="Duration">Duration</string>
+    <string name="Note">Note</string>
+</resources>

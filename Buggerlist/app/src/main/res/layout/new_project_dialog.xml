@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+<LinearLayout
+    android:id="@+id/dialog_bar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimaryDark"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentStart="true">
+    <ImageView
+        android:id="@+id/dialog_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_back_white"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"/>
+    <TextView
+        android:id="@+id/dialog_text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/newProject"
+        android:textColor="@color/colorIcons"
+        android:layout_toRightOf="@+id/dialog_close"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textStyle="bold"/>
+</LinearLayout>
+<EditText
+    android:id="@+id/edit_project_name"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/dialog_bar"
+    android:text="@string/newProject"
+    android:textColor="@color/colorSecondaryText"
+    android:layout_marginLeft="8dp"
+    android:layout_marginRight="16dp"
+    android:layout_marginBottom="16dp"
+    app:layout_anchor="@id/dialog_bar"
+    />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/add_project"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edit_project_name"
+        android:layout_gravity="bottom|right"
+        android:layout_margin="16dp"
+        android:src="@drawable/ic_done"
+        app:backgroundTint="@color/done"
+        app:fabSize="mini"
+        app:layout_anchor="@id/edit_project_name"
+        app:layout_anchorGravity="bottom|right|end" />
+    </LinearLayout>
+</RelativeLayout>

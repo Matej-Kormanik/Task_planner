@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#673ab7</color>
+    <color name="colorPrimaryDark">#512DA8</color>
+    <color name="colorAccent">#ff5722</color>
+    <color name="colorPrimaryLight">#D1C4E9</color>
+    <color name="colorPrimaryText">#212121</color>
+    <color name="colorSecondaryText">#757575</color>
+    <color name="colorIcons">#ffffff</color>
+    <color name="colorDivider">#BDBDBD</color>
+    <color name="projectCircle">#388e3c</color>
+    <color name="projectCircle2">#8BC34A</color>
+    <color name="done">#03a9f4</color>
+
+
+
+
+</resources>

@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/colorPrimaryLight">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/colorPrimaryDark"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp">
+
+        <ImageView
+        android:id="@+id/new_task_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+            android:src="@drawable/ic_back_white"
+            android:clickable="true"/>
+        <TextView
+            android:id="@+id/new_task"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/newTask"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textColor="@color/colorIcons"
+            android:textSize="24dp"/>
+        <TextView
+            android:id="@+id/new_task_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorIcons"
+            android:layout_gravity="center|left"
+            android:layout_marginRight="8dp"
+            android:text="SAVE"
+            android:textStyle="bold"
+            android:clickable="true"/>
+
+    </LinearLayout>
+    <EditText
+        android:id="@+id/new_task_name"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint=" Task Name"
+        android:textColor="@color/colorSecondaryText"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/edittext_background"
+        android:textSize="20dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp">
+        <TextView
+            android:id="@+id/project_selection"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Project"
+            android:textColor="@color/colorPrimaryText"
+            android:textSize="@dimen/tab_label"
+            android:textStyle="bold"
+            android:layout_marginTop="3dp"
+            android:layout_marginLeft="8dp"
+            />
+
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawSelectorOnTop="true"
+            android:layout_gravity="right"
+            android:gravity="right"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Date"
+            android:textColor="@color/colorPrimaryText"
+            android:textSize="@dimen/tab_label"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp"
+            />
+
+        <TextView
+            android:id="@+id/new_task_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="today date"
+            android:textColor="@color/colorPrimaryText"
+            android:textSize="@dimen/tab_label"
+            android:textStyle="bold"
+            android:layout_gravity="right"
+            android:gravity="right"/>
+        <!--<DatePicker-->
+            <!--android:id="@+id/datePicker"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:visibility="gone"></DatePicker>-->
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Start"
+            android:textColor="@color/colorPrimaryText"
+            android:textSize="@dimen/tab_label"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/new_task_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="today time"
+            android:textColor="@color/colorPrimaryText"
+            android:textSize="@dimen/tab_label"
+            android:textStyle="bold"/>
+
+        <!--<TimePicker-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:visibility="gone"></TimePicker>-->
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="12dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Duration"
+            android:textColor="@color/colorPrimaryText"
+            android:textSize="@dimen/tab_label"
+            android:gravity="left"
+            android:layout_gravity="center"
+            android:layout_marginRight="16dp"
+            android:textStyle="bold"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_action_add"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="5"
+            android:textColor="@color/colorPrimaryText"
+            android:textSize="@dimen/tab_label"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_action_add"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Priority"
+            android:textColor="@color/colorPrimaryText"
+            android:textSize="@dimen/tab_label"
+            android:layout_marginRight="16dp"
+            android:textStyle="bold"
+            android:layout_marginTop="5dp"/>
+
+        <RadioGroup
+            android:id="@+id/new_task_priority"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <RadioButton
+                android:id="@+id/pri1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:text="low" />
+            <RadioButton
+                android:id="@+id/pri2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:text="normal"/>
+            <RadioButton
+                android:id="@+id/pri3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:text="high"/>
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Note"
+        android:textColor="@color/colorPrimaryText"
+        android:textSize="@dimen/tab_label"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="15dp"
+        android:textStyle="bold"/>
+    <EditText
+        android:id="@+id/new_task_info"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:hint=" Aditional info"
+        android:textColor="@color/colorSecondaryText"
+        android:gravity="top"
+        android:textSize="20dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/edittext_background"/>
+
+</LinearLayout>
